@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/userB"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        app:srcCompat="@mipmap/userb_foreground" />
+
+    <EditText
+        android:id="@+id/FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/userB"
+        android:drawableLeft="@mipmap/userbss_foreground"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/FirstName"
+        android:drawableLeft="@mipmap/userbss_foreground"
+        android:ems="10"
+        android:hint="full name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/PassWordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/LastName"
+        android:drawableLeft="@mipmap/keybb_foreground"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:id="@+id/g1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PassWordRegister"
+        android:background="#D5C6C6"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/famle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="famle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/g1"
+        android:layout_alignEnd="@id/g1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ClearReg"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:text="clear"
+            app:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="register"
+            app:backgroundTint="#2196F3" />
+    </LinearLayout>
+</RelativeLayout>
